@@ -1,0 +1,654 @@
+/* Font import from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* File Root */
+:root {
+  /* root untuk font family */
+  --font-title-primary: "Pacifico", cursive;
+  --font-body-primary: "Poppins", sans-serif;
+
+  /* Color Pallet */
+  --color-branding-primary: #5a7d8b;
+  --color-icon-primary: #5a5a59;
+  --color-icon-secondary: #b6b6b6;
+  --color-bodytext-primary: #3d3d3d;
+  --color-body-primary: #ffffff;
+  --color-button-primary: #0094f3;
+  --color-navbar-primary: #303030;
+  --color-btnmap-primary: #188038;
+}
+
+/* wrapping danautoba star */
+.container-wrapping {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* wrapping end */
+
+/* navbar star */
+/* logo */
+.navbarToba .logo img {
+  width: 70%;
+}
+
+.navbarToba .btnvisit {
+  outline: 1px solid var(--color-branding-primary);
+  color: var(--color-body-primary);
+  transition: 0.5s;
+  font-size: 12px;
+}
+
+.navbarToba .btnvisit:hover {
+  background-color: var(--color-branding-primary);
+  color: var(--color-body-primary);
+}
+
+.navbarToba .iconnav {
+  width: 18px;
+  height: 18px;
+}
+
+.navbarToba form a {
+  font-size: 11px;
+}
+
+.navbarToba ul li {
+  font-size: 12px;
+}
+
+/* hero star */
+.hero.wrapping video {
+  width: 100%;
+  margin: 60px 0 0;
+}
+
+.hero.wrapping {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero.wrapping .hero-text {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  z-index: 1;
+  width: 100%;
+}
+
+.hero.wrapping .hero-text .hTittletext {
+  font-family: var(--font-title-primary);
+  color: var(--color-body-primary);
+  text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.6);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero.wrapping .hero-text .hMetatext {
+  color: var(--color-body-primary);
+  font-weight: 600;
+}
+
+.hero .hero-text .btnvideo a {
+  font-size: 14px;
+  width: 100px;
+  background-color: var(--color-branding-primary);
+  color: var(--color-body-primary);
+  border-radius: 10px 0 0 10px;
+}
+
+/* hero end */
+
+/* kisah start */
+
+.kisah-wrapping {
+  margin-top: -6px;
+  z-index: 0;
+}
+
+.kisah-wrapping .row {
+  background-color: #00649c;
+  display: flex;
+  justify-content: center;
+}
+
+.kisah-wrapping .titlekisah {
+  font-family: var(--font-title-primary);
+  font-size: 40px;
+  color: var(--color-body-primary);
+  text-align: center;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.kisah-wrapping .kisahmandalika {
+  font-size: 14px;
+  color: var(--color-body-primary);
+}
+/* kisah end */
+
+/* pantai img start */
+.pantaiimg img {
+  width: 100%;
+}
+/* pantai img end */
+
+/* peta img start */
+.petaimg img {
+  width: 100%;
+}
+/* peta img end */
+
+/* how to get section star */
+
+.howtget {
+  background: url(../assets/img_bg/htgt.jpg);
+  background-size: cover;
+}
+
+.howtget .title_htgt {
+  font-family: var(--font-title-primary);
+  font-size: 40px;
+  color: var(--color-body-primary);
+  text-align: center;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+}
+/* how to get section end */
+
+/* for the section tab menu detail maps star */
+.tabmenu {
+  /* width: 550px;
+  height: 102px; */
+  border-radius: 50px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: #045888;
+  font-family: var(--font-body-primary);
+}
+
+.tabmenu ul {
+  padding: 20px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #3192ec;
+  border-radius: 20px;
+}
+
+.nav-pills button {
+  color: #ffffff;
+}
+.nav-pills button:hover {
+  color: var(--color-branding-primary);
+}
+
+.howtget .rounded-circle {
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--color-body-primary);
+}
+
+.howtget .tab-content .text-start img {
+  width: 130px;
+  height: 30px;
+}
+
+.howtget .sewamobil .line-vertical,
+.howtget .sewabus .line-vertical {
+  width: 2px;
+  height: 150px;
+  background-color: var(--color-body-primary);
+  margin: 0 9px;
+}
+
+.howtget .sewabus .bus.line-vertical {
+  height: 150px;
+}
+
+.howtget .sewamobil .text-start p:nth-child(2),
+.howtget .sewamobil .text-start p:nth-child(3),
+.howtget .sewabus .text-start p:nth-child(2),
+.howtget .sewabus .text-start p:nth-child(3),
+.howtget .sewabus .text-start p:nth-child(4),
+.howtget .opsilain p:nth-child(2),
+.howtget .opsilain p:nth-child(3) {
+  font-family: var(--font-body-primary);
+  color: var(--color-body-primary);
+}
+
+.howtget .sewamobil .text-start p:nth-child(1),
+.howtget .sewamobil .text-start p:nth-child(4),
+.howtget .sewabus .text-start p:nth-child(6),
+.howtget .sewabus .text-start p:nth-child(1),
+.howtget .sewabus .text-start p:nth-child(3),
+.howtget .sewabus .text-start p:nth-child(4),
+.howtget .sewabus .text-start p:nth-child(5),
+.howtget .opsilain p:nth-child(1) {
+  font-family: var(--font-body-primary);
+  color: var(--color-body-primary);
+  font-weight: 600;
+}
+
+.howtget .sewamobil .titlesewa,
+.howtget .sewabus .titlesewa {
+  font-weight: 700;
+  font-family: var(--font-body-primary);
+  color: var(--color-branding-primary);
+  width: 25%;
+}
+
+.howtget .sewabus .text-start p:nth-child(6) {
+  padding-top: 25px;
+}
+
+.howtget .sewabus .text-start.bansising p:nth-child(5) {
+  padding-top: 48px;
+}
+
+.howtget .opsilain p:nth-child(3) a {
+  background-color: var(--color-btnmap-primary);
+  color: var(--color-body-primary);
+  border-radius: 30px;
+}
+
+/* for the section tab menu detail maps end */
+
+/* kuliner */
+.kuliner {
+  background: url(../assets/img_bg/bg_kuliner.png);
+  background-size: cover;
+}
+
+.kuliner .title_kuliner {
+  font-family: var(--font-title-primary);
+  font-size: 40px;
+  color: var(--color-body-primary);
+  text-align: center;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.kuliner .card {
+  border-radius: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+.kuliner .card-body .card-title {
+  font-size: 16px;
+  color: var(--color-body-primary);
+  font-weight: 700;
+}
+
+.kuliner .card-body .card-text {
+  font-size: 14px;
+  color: var(--color-body-primary);
+}
+
+.kuliner .card-body {
+  flex: 1 1 auto;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.kuliner .card .card-img-1 {
+  height: 100%;
+}
+/* kuliner end */
+
+/* akomodasi */
+.akomodasi {
+  background-color: #00649c;
+  padding-bottom: 70px;
+}
+
+.akomodasi-wrapping .row {
+  display: flex;
+  justify-content: center;
+}
+
+.akomodasi-wrapping .titleako {
+  font-family: var(--font-title-primary);
+  font-size: 40px;
+  color: var(--color-body-primary);
+  text-align: center;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.akomodasi-wrapping .textakomodasi {
+  font-size: 15px;
+  color: var(--color-body-primary);
+  text-align: center;
+}
+
+.akomodasi .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #045888;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.akomodasi .card img {
+  height: 50px;
+  width: 50px;
+}
+
+.akomodasi .card .text-card {
+  color: var(--color-body-primary);
+  font-family: var(--font-body-primary);
+  font-size: 14px;
+}
+
+.akomodasi .card .text-card .lokasi {
+  margin-left: 10px;
+}
+
+.akomodasi .card .text-card .lokasi .p-2 {
+  margin-top: -3px;
+}
+
+.akomodasi .card .text-card .lokasi img {
+  width: 14px;
+  height: 14px;
+}
+
+.akomodasi .card .text-card .icon_hotel img {
+  width: 17px;
+  height: 17px;
+}
+
+.akomodasi .card .btn {
+  background-color: #5ba6e8;
+  border-radius: 20px;
+  color: var(--color-body-primary);
+  font-family: var(--font-body-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+/* akomodasi end*/
+
+/* section hotel pilihan star */
+.hotelpilihan .titlehotel p {
+  font-weight: 600;
+  font-family: var(--font-body-primary);
+  color: var(--color-bodytext-primary);
+}
+
+.hotelpilihan p span {
+  color: var(--color-branding-primary);
+}
+
+.hotelpilihan .metapilihanhotel {
+  font-family: var(--font-body-primary);
+}
+
+.hotelpilihan a {
+  border-radius: 18px;
+}
+
+.hotelpilihan ul li {
+  outline: 1px solid var(--color-branding-primary);
+  border-radius: 20px;
+}
+
+.hotelpilihan .tabhotelpilihan {
+  width: 550px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  font-family: var(--font-body-primary);
+}
+
+.hotelpilihan .list_harga {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hotelpilihan .list_harga p:nth-child(1) {
+  font-weight: 600;
+  font-family: var(--font-body-primary);
+}
+
+.hotelpilihan .list_harga p:nth-child(2),
+.hotelpilihan .list_harga a {
+  font-family: var(--font-body-primary);
+}
+
+/* section hotel pilihan end */
+
+/* section card destination star */
+.carddestination .card1 img {
+  height: 327px;
+  background-size: cover;
+  object-fit: cover;
+}
+.carddestination .card .btn {
+  width: 40%;
+}
+
+.carddestination .card .card-img-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.carddestination .card-text-overlay {
+  opacity: 0;
+  transition: 1s;
+}
+
+.carddestination .card-text-overlay:hover {
+  opacity: 1;
+}
+.carddestination .card-text-overlay h5,
+.carddestination .card-text-overlay p,
+.carddestination .card-text-overlay a {
+  transform: translateY(10px);
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.carddestination .card-text-overlay:hover h5,
+.carddestination .card-text-overlay:hover p,
+.carddestination .card-text-overlay:hover a {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* section card destination end */
+
+/* footer section star */
+.footer .creator p:nth-child(1) {
+  font-weight: 700;
+}
+/* footer section end */
+
+/* breakpoint ==========================================*/
+
+/* bS5 mobile extra small < 576px */
+@media (max-width: 576px) {
+  .navbarToba .logo img {
+    display: block;
+  }
+
+  .hero .hero-text .btnvideo a {
+    width: 100%;
+  }
+
+  .hero .hero-text .iconhero {
+    width: 25px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 12px;
+    /* margin: 0 10px; */
+    /* width: 100px; */
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 10px;
+    /* width: 150px; */
+  }
+
+  .hero.wrapping .hero-text .btnvideo a {
+    font-size: 10px;
+    width: 80px;
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(100%);
+  }
+
+  .kisah-wrapping .titlekisah {
+    font-size: 30px;
+  }
+
+  .nav-pills button {
+    font-size: 68%;
+  }
+
+  .tabmenu ul {
+    padding: 10px;
+  }
+
+  .howtget .title_htgt {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  .howtget .sewamobil .titlesewa,
+  .howtget .sewabus .titlesewa {
+    width: 50%;
+  }
+
+  .howtget .sewamobil iframe,
+  .howtget .sewabus iframe {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .howtget .sewamobil p {
+    word-wrap: break-word;
+  }
+
+  .hotelpilihan .list_harga :nth-child(1),
+  .hotelpilihan .list_harga p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .hotelpilihan .list_harga .img_pilihan {
+    width: 20px;
+  }
+
+  .hotelpilihan .list_harga .img_iconhotel {
+    width: 30px;
+  }
+
+  .hotelpilihan .list_harga a {
+    width: 100px;
+    /* font-size: 5px; */
+  }
+
+  .kuliner .title_kuliner {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  .akomodasi-wrapping .titleako {
+    font-size: 30px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+}
+
+/* bS5 tablet small < 576px */
+@media (min-width: 576px) {
+  .navbarToba .logo img {
+    display: block;
+  }
+}
+
+/* BS tablet medium min-w 768px */
+@media (min-width: 768px) {
+  .hero .hero-text .iconhero {
+    width: 40px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 43px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+/* BS laptop md lg min-w 768px */
+@media (min-width: 992px) {
+  .navbarToba .logo img {
+    display: none;
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(100%);
+  }
+
+  .hero .hero-text .iconhero {
+    width: 50px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 50px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 18px;
+  }
+}
+
+/* BS5 Device Extra large min 1200px */
+@media (min-width: 1400px) {
+  .navbarToba ul li {
+    font-size: 18px;
+  }
+
+  .navbarToba .iconnav {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbarToba .btnvisit {
+    font-size: 16px;
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(170%);
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 60px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 20px;
+  }
+
+  .hero .hero-text .btnvideo a {
+    font-size: 20px;
+    width: 150px;
+  }
+}

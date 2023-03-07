@@ -1,0 +1,640 @@
+/* Font import from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* File Root */
+:root {
+  /* root untuk font family */
+  --font-title-primary: "Pacifico", cursive;
+  --font-body-primary: "Poppins", sans-serif;
+
+  /* Color Pallet */
+  --color-branding-primary: #5a7d8b;
+  --color-icon-primary: #5a5a59;
+  --color-icon-secondary: #b6b6b6;
+  --color-bodytext-primary: #3d3d3d;
+  --color-body-primary: #ffffff;
+  --color-button-primary: #0094f3;
+  --color-navbar-primary: #303030;
+  --color-btnmap-primary: #188038;
+}
+
+/* wrapping danautoba star */
+.container-wrapping {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* wrapping end */
+
+/* navbar star */
+/* logo */
+.navbarToba .logo img {
+  width: 70%;
+}
+
+.navbarToba .btnvisit {
+  outline: 1px solid var(--color-branding-primary);
+  color: var(--color-body-primary);
+  transition: 0.5s;
+  font-size: 12px;
+}
+
+.navbarToba .btnvisit:hover {
+  background-color: var(--color-branding-primary);
+  color: var(--color-body-primary);
+}
+
+.navbarToba .iconnav {
+  width: 18px;
+  height: 18px;
+}
+
+.navbarToba form a {
+  font-size: 11px;
+}
+
+.navbarToba ul li {
+  font-size: 12px;
+}
+
+/* navbar end */
+
+/* hero star */
+.hero.wrapping video {
+  width: 100%;
+  margin: 60px 0 0;
+}
+
+.hero.wrapping {
+  position: relative;
+  width: 100%;
+}
+
+.hero.wrapping .hero-text {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  z-index: 1;
+  width: 100%;
+}
+
+.hero.wrapping .hero-text .hTittletext {
+  font-family: var(--font-title-primary);
+  color: var(--color-body-primary);
+  text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.6);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero.wrapping .hero-text .hMetatext {
+  color: var(--color-body-primary);
+  font-weight: 600;
+}
+
+.hero .hero-text .btnvideo a {
+  font-size: 14px;
+  width: 100px;
+  background-color: var(--color-branding-primary);
+  color: var(--color-body-primary);
+  border-radius: 10px 0 0 10px;
+  transition: 0.5s;
+}
+
+.hero .hero-text .btnvideo a:hover {
+  background: #4c6772;
+}
+
+/* hero end */
+
+/* maps star */
+.mapsToba img {
+  width: 100%;
+  margin-top: -5px;
+}
+/* maps end */
+
+/* geosite star */
+.geo-wrapping .titlegeo,
+.KehebatanDtoba .titleKehebatandToba,
+.etamangan .text-center p:nth-child(1) {
+  font-family: var(--font-title-primary);
+  font-size: 53px;
+  color: var(--color-branding-primary);
+}
+
+.geo-wrapping .tesegosite,
+.KehebatanDtoba .teskehebatanDtoba,
+.etamangan .text-center p:nth-child(2) {
+  font-size: 16px;
+  font-family: var(--font-body-primary);
+}
+
+.geo-wrapping .card .card-img-overlay,
+.carddestination .card .card-img-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.geo-wrapping .card-img-overlay {
+  opacity: 0;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.geo-wrapping .card-img-overlay:hover {
+  opacity: 1;
+}
+
+.geo-wrapping .card-img-overlay h4,
+.geo-wrapping .card-img-overlay p {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.geo-wrapping .card-img-overlay:hover h4,
+.geo-wrapping .card-img-overlay:hover p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* geosite end */
+
+/* kehebatan danau toba star */
+.KehebatanDtoba img {
+  width: 100px;
+}
+
+.KehebatanDtoba p:nth-child(2) {
+  font-family: var(--font-body-primary);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-branding-primary);
+}
+
+.KehebatanDtoba p:nth-child(3) {
+  font-family: var(--font-body-primary);
+  font-size: 16px;
+  color: var(--color-bodytext-primary);
+}
+/* kehebatan danau toba end */
+
+/* how to get section star */
+.howtget p {
+  font-family: var(--font-title-primary);
+  color: var(--color-branding-primary);
+}
+/* how to get section end */
+
+/* for the section tab menu detail maps star */
+.tabmenu {
+  /* width: 550px;
+  height: 102px; */
+  border-radius: 50px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  font-family: var(--font-body-primary);
+}
+
+.tabmenu ul {
+  padding: 20px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--color-branding-primary);
+  border-radius: 20px;
+}
+
+.nav-pills button {
+  color: var(--color-bodytext-primary);
+}
+.nav-pills button:hover {
+  color: var(--color-branding-primary);
+}
+
+.howtget .rounded-circle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-branding-primary);
+}
+
+.howtget .sewamobil .line-vertical,
+.howtget .sewabus .line-vertical {
+  width: 5px;
+  height: 100px;
+  background-color: var(--color-branding-primary);
+  margin: 0 7.2px;
+}
+
+.howtget .sewabus .bus.line-vertical {
+  height: 205px;
+}
+
+.howtget .sewamobil .text-start p:nth-child(2),
+.howtget .sewamobil .text-start p:nth-child(3),
+.howtget .sewabus .text-start p:nth-child(2),
+.howtget .sewabus .text-start p:nth-child(3),
+.howtget .sewabus .text-start p:nth-child(4),
+.howtget .opsilain p:nth-child(2),
+.howtget .opsilain p:nth-child(3) {
+  font-family: var(--font-body-primary);
+  color: var(--color-bodytext-primary);
+}
+
+.howtget .sewamobil .text-start p:nth-child(1),
+.howtget .sewamobil .text-start p:nth-child(4),
+.howtget .sewabus .text-start p:nth-child(6),
+.howtget .sewabus .text-start p:nth-child(1),
+.howtget .sewabus .text-start p:nth-child(4),
+.howtget .sewabus .text-start p:nth-child(5),
+.howtget .opsilain p:nth-child(1) {
+  font-family: var(--font-body-primary);
+  color: var(--color-bodytext-primary);
+  font-weight: 600;
+}
+
+.howtget .sewamobil .titlesewa,
+.howtget .sewabus .titlesewa {
+  font-weight: 700;
+  font-family: var(--font-body-primary);
+  color: var(--color-branding-primary);
+  width: 25%;
+}
+
+.howtget .sewabus .text-start p:nth-child(6) {
+  padding-top: 25px;
+}
+
+.howtget .sewabus .text-start.bansising p:nth-child(5) {
+  padding-top: 48px;
+}
+
+.howtget .opsilain p:nth-child(3) a {
+  background-color: var(--color-btnmap-primary);
+  color: var(--color-body-primary);
+  border-radius: 30px;
+}
+/* for the section tab menu detail maps end */
+
+/* for a section eta mangan star */
+.etamangan {
+  position: relative;
+  padding: 0 10px;
+}
+
+.etamangan .mie-gomak img,
+.etamangan .manuk-napinadar img,
+.etamangan .sambal-tuk img {
+  width: 400px;
+  height: 400px;
+}
+
+.etamangan .mie-gomak .text-etamangan,
+.etamangan .sambal-tuk .text-etamangan {
+  width: 600px;
+  /* height: 300px; */
+  padding: 20px;
+  gap: 10px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  z-index: 2;
+  margin-left: -200px;
+  background-color: #ffffff;
+}
+
+.etamangan .mie-gomak .text-etamangan p:nth-child(1),
+.etamangan .manuk-napinadar .text-etamangan p:nth-child(1),
+.etamangan .sambal-tuk .text-etamangan p:nth-child(1) {
+  color: var(--color-branding-primary);
+  font-weight: 600;
+  font-family: var(--font-body-primary);
+}
+
+.etamangan .mie-gomak .text-etamangan p:nth-child(2),
+.etamangan .mie-gomak .text-etamangan p:nth-child(3),
+.etamangan .manuk-napinadar .text-etamangan p:nth-child(2),
+.etamangan .sambal-tuk .text-etamangan p:nth-child(2),
+.etamangan .sambal-tuk .text-etamangan p:nth-child(3) {
+  font-family: var(--font-body-primary);
+  font-size: 14px;
+  color: var(--color-bodytext-primary);
+}
+
+.etamangan .manuk-napinadar .text-etamangan {
+  width: 600px;
+  /* height: 300px; */
+  padding: 20px;
+  gap: 10px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  z-index: 2;
+  margin-right: -200px;
+  background-color: #ffffff;
+}
+/* for a section eta mangan end */
+
+/* section hotel pilihan star */
+.hotelpilihan .titlehotel p {
+  font-weight: 600;
+  font-family: var(--font-body-primary);
+  color: var(--color-bodytext-primary);
+}
+
+.hotelpilihan p span {
+  color: var(--color-branding-primary);
+}
+
+.hotelpilihan .metapilihanhotel {
+  font-family: var(--font-body-primary);
+}
+
+.hotelpilihan a {
+  border-radius: 18px;
+  font-size: 14px;
+  color: var(--color-body-primary);
+}
+
+.hotelpilihan ul li {
+  outline: 1px solid var(--color-branding-primary);
+  border-radius: 20px;
+}
+
+.hotelpilihan .card {
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  font-family: var(--font-body-primary);
+  font-size: 14px;
+}
+
+.hotelpilihan .btn_traveloka .btn {
+  background-color: #5a7d8b;
+}
+
+/* .hotelpilihan .list_harga {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hotelpilihan .list_harga p:nth-child(1) {
+  font-weight: 600;
+  font-family: var(--font-body-primary);
+}
+
+.hotelpilihan .list_harga p:nth-child(2),
+.hotelpilihan .list_harga a {
+  font-family: var(--font-body-primary);
+} */
+
+/* section hotel pilihan end */
+
+/* section card destination star */
+.carddestination .card1 img {
+  height: 327px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.carddestination .card1 a {
+  width: 50%;
+  border: 1px solid white;
+  color: var(--color-body-primary);
+}
+
+.carddestination .card1 a:hover {
+  background-color: var(--color-body-primary);
+  color: var(--color-bodytext-primary);
+}
+
+.carddestination .card-text-overlay {
+  opacity: 0;
+  transition: 1s;
+}
+
+.carddestination .card-text-overlay:hover {
+  opacity: 1;
+}
+.carddestination .card-text-overlay h5,
+.carddestination .card-text-overlay p,
+.carddestination .card-text-overlay a {
+  transform: translateY(10px);
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.carddestination .card-text-overlay:hover h5,
+.carddestination .card-text-overlay:hover p,
+.carddestination .card-text-overlay:hover a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* section card destination end */
+
+/* footer section star */
+.footer .creator p:nth-child(1) {
+  font-weight: 700;
+}
+/* footer section end */
+
+/* breakpoint ==========================================*/
+
+/* bS5 mobile extra small < 576px */
+@media (max-width: 576px) {
+  .navbarToba .logo img {
+    display: block;
+  }
+
+  .hero .hero-text .btnvideo a {
+    width: 100%;
+  }
+
+  .hero .hero-text .iconhero {
+    width: 20px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 12px;
+    /* margin: 0 10px; */
+    width: 100%;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 50%;
+    width: 100%;
+  }
+
+  .hero.wrapping .hero-text .btnvideo a {
+    font-size: 10px;
+    /* width: 80px; */
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(100%);
+    margin-top: 20px;
+  }
+
+  .nav-pills button {
+    font-size: 16px;
+  }
+
+  .tabmenu ul {
+    padding: 10px;
+  }
+
+  .geo-wrapping .card-img-overlay p {
+    font-size: 12px;
+  }
+
+  .geo-wrapping .card-img-overlay h4 {
+    font-size: 14px;
+  }
+
+  .etamangan .mie-gomak .text-etamangan p:nth-child(1),
+  .etamangan .manuk-napinadar .text-etamangan p:nth-child(1),
+  .etamangan .sambal-tuk .text-etamangan p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .etamangan .mie-gomak .text-etamangan p:nth-child(2),
+  .etamangan .mie-gomak .text-etamangan p:nth-child(3),
+  .etamangan .manuk-napinadar .text-etamangan p:nth-child(2),
+  .etamangan .manuk-napinadar .text-etamangan p:nth-child(3),
+  .etamangan .sambal-tuk .text-etamangan p:nth-child(2),
+  .etamangan .sambal-tuk .text-etamangan p:nth-child(3) {
+    font-size: 16px;
+    font-family: var(--font-body-primary);
+    color: var(--color-bodytext-primary);
+  }
+
+  .etamangan .mie-gomak .text-etamangan,
+  .etamangan .sambal-tuk .text-etamangan {
+    padding: 20px;
+    margin-left: -330px;
+    width: 100%;
+  }
+
+  .etamangan .manuk-napinadar .text-etamangan {
+    margin-right: -350px;
+  }
+
+  .howtget .sewamobil .titlesewa,
+  .howtget .sewabus .titlesewa {
+    width: 50%;
+  }
+
+  .howtget .sewamobil iframe,
+  .howtget .sewabus iframe {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .howtget .sewamobil p {
+    word-wrap: break-word;
+  }
+
+  .hotelpilihan .list_harga :nth-child(1),
+  .hotelpilihan .list_harga p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .hotelpilihan .list_harga .img_pilihan {
+    width: 20px;
+  }
+
+  .hotelpilihan .list_harga .img_iconhotel {
+    width: 30px;
+  }
+
+  .hotelpilihan .list_harga a {
+    width: 100px;
+    /* font-size: 5px; */
+  }
+
+  .footer p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+/* bS5 tablet small < 576px */
+@media (min-width: 576px) {
+  .navbarToba .logo img {
+    display: block;
+  }
+}
+
+/* BS tablet medium min-w 768px */
+@media (min-width: 768px) {
+  .hero .hero-text .iconhero {
+    width: 40px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 43px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+/* BS laptop md lg min-w 768px */
+@media (min-width: 992px) {
+  .navbarToba .logo img {
+    display: none;
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(100%);
+  }
+
+  .hero .hero-text .iconhero {
+    width: 50px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 50px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 18px;
+  }
+}
+
+/* BS5 Device Extra large min 1200px */
+@media (min-width: 1400px) {
+  .navbarToba ul li {
+    font-size: 18px;
+  }
+
+  .navbarToba .iconnav {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbarToba .btnvisit {
+    font-size: 16px;
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(170%);
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 60px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 20px;
+  }
+
+  .hero .hero-text .btnvideo a {
+    font-size: 20px;
+    width: 150px;
+  }
+}

@@ -1,0 +1,55 @@
+/* Font import from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* File Root */
+:root {
+  /* root untuk font family */
+  --font-title-primary: "Pacifico", cursive;
+  --font-body-primary: "Poppins", sans-serif;
+
+  /* Color Pallet */
+  --color-branding-primary: #5a7d8b;
+  --color-icon-primary: #5a5a59;
+  --color-icon-secondary: #b6b6b6;
+  --color-bodytext-primary: #3d3d3d;
+  --color-body-primary: #ffffff;
+  --color-button-primary: #0094f3;
+  --color-navbar-primary: #303030;
+  --color-btnmap-primary: #188038;
+}
+
+.titleTentangBorobudur {
+  font-family: var(--font-body-primary);
+  color: white;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.borobudur_hero {
+  width: 100%;
+  background-position: center;
+}
+
+.tentang_caption {
+  color: white;
+  font-size: 16px;
+  font-family: var(--font-body-primary);
+}
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1400px) {
+}

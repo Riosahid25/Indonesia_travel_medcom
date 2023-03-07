@@ -1,0 +1,671 @@
+/* Font import from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* File Root */
+:root {
+  /* root untuk font family */
+  --font-title-primary: "Pacifico", cursive;
+  --font-body-primary: "Poppins", sans-serif;
+
+  /* Color Pallet */
+  --color-branding-primary: #2c6975;
+  --color-icon-primary: #5a5a59;
+  --color-icon-secondary: #b6b6b6;
+  --color-bodytext-primary: #3d3d3d;
+  --color-body-primary: #ffffff;
+  --color-button-primary: #0094f3;
+  --color-navbar-primary: #303030;
+  --color-btnmap-primary: #188038;
+  --color-background: #d3b4a2;
+  --color-kuliner-primary: #3b383c;
+  --color-card-primary: #ecd7cb;
+  --color-tabmenu-primary: #195662;
+}
+
+body {
+  background-color: var(--color-branding-primary);
+}
+
+/* wrapping danautoba star */
+
+.container-wrapping {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* wrapping end */
+
+/* navbar star */
+/* logo */
+.navbarToba .logo img {
+  width: 70%;
+}
+
+.navbarToba .btnvisit {
+  outline: 1px solid var(--color-branding-primary);
+  color: var(--color-body-primary);
+  transition: 0.5s;
+  font-size: 12px;
+}
+
+.navbarToba .btnvisit:hover {
+  background-color: var(--color-branding-primary);
+  color: var(--color-body-primary);
+}
+
+.navbarToba .iconnav {
+  width: 18px;
+  height: 18px;
+}
+
+.navbarToba form a {
+  font-size: 11px;
+}
+
+.navbarToba ul li {
+  font-size: 12px;
+}
+
+/* navbar end */
+
+/* hero star */
+.hero.wrapping video {
+  width: 100%;
+  margin: 60px 0 0;
+}
+
+.hero.wrapping {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero.wrapping .hero-text {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  z-index: 1;
+  width: 100%;
+}
+
+.hero.wrapping .hero-text .hTittletext {
+  font-family: var(--font-title-primary);
+  color: var(--color-body-primary);
+  text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.6);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero.wrapping .hero-text .hMetatext {
+  color: var(--color-body-primary);
+  font-weight: 600;
+}
+
+.hero .hero-text .btnvideo a {
+  font-size: 14px;
+  width: 100px;
+  background-color: var(--color-branding-primary);
+  color: var(--color-body-primary);
+  border-radius: 10px 0 0 10px;
+}
+
+/* hero end */
+
+/* maps star */
+.mapsToba img {
+  width: 100%;
+}
+/* maps end */
+
+/* section about simple star  */
+
+.about_simple {
+  background: url(../assets/img_content/section_about/danau_toba.jpg) no-repeat;
+  object-fit: fill;
+  /* background-size: cover; */
+  background-position: 0 -560px;
+  margin-top: -2%;
+  position: relative;
+}
+
+.about_simple .text-white {
+  padding: 20px 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  line-height: 28;
+  height: 300px;
+}
+
+.about_simple .text-white p:nth-child(1) {
+  font-family: var(--font-title-primary);
+}
+
+.about_simple .text-white p:nth-child(2) {
+  font-family: var(--font-body-primary);
+  line-height: 28px;
+}
+/* section about simple end  */
+
+/* how to get section star */
+
+.howtget p {
+  font-family: var(--font-title-primary);
+  color: var(--color-branding-primary);
+  word-wrap: break-word;
+}
+/* how to get section end */
+
+/* for the section tab menu detail maps star */
+.tabmenu {
+  /* width: 500px; */
+  /* height: 102px; */
+  border-radius: 50px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: var(--color-tabmenu-primary);
+  font-family: var(--font-body-primary);
+}
+
+.tabmenu ul {
+  padding: 20px;
+  gap: 50px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--color-branding-primary);
+  border-radius: 20px;
+  width: 300px;
+}
+
+.nav-pills button {
+  color: var(--color-body-primary);
+}
+.nav-pills button:hover {
+  color: var(--color-branding-primary);
+}
+
+.howtget .rounded-circle {
+  width: 20px;
+  height: 20px;
+  outline: 2px solid var(--color-body-primary);
+}
+
+.howtget .text-center p {
+  color: var(--color-body-primary);
+}
+
+.howtget .line_horizontal {
+  height: 3px;
+  width: 100%;
+  border: 2px solid var(--color-body-primary);
+}
+
+.howtget .title-how-to-get p {
+  font-family: var(--font-body-primary);
+  color: var(--color-body-primary);
+  font-weight: 600;
+}
+
+.howtget .meta-how-to-get p {
+  font-family: var(--font-body-primary);
+  color: var(--color-body-primary);
+}
+
+.howtget .meta-how-to-get .icon_htg {
+  width: 70px;
+}
+
+.howtget .opsilain p {
+  color: var(--color-body-primary);
+  font-family: var(--font-body-primary);
+}
+
+.howtget .opsilain a {
+  font-family: var(--font-body-primary);
+  color: var(--color-body-primary);
+  background-color: var(--color-btnmap-primary);
+}
+
+/* for the section tab menu detail maps end */
+
+/* for a section kuliner khas star */
+
+/* for a section kuliner khas end */
+
+/* section card destination star */
+.carddestination .card1 {
+  background: var(--color-branding-primary);
+  border-radius: 0;
+}
+.carddestination .card1 img {
+  height: 327px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.carddestination .card .card-img-overlay,
+.hero video {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.carddestination .card1 a {
+  width: 50%;
+  border: 1px solid white;
+  color: var(--color-body-primary);
+}
+
+.carddestination .card1 a:hover {
+  background-color: var(--color-body-primary);
+  color: var(--color-bodytext-primary);
+}
+
+.carddestination .card-text-overlay {
+  opacity: 0;
+  transition: 1s;
+}
+
+.carddestination .card1 a:hover {
+  background-color: var(--color-body-primary);
+  color: var(--color-bodytext-primary);
+}
+
+.carddestination .card-text-overlay:hover {
+  opacity: 1;
+}
+.carddestination .card-text-overlay h5,
+.carddestination .card-text-overlay p,
+.carddestination .card-text-overlay a {
+  transform: translateY(10px);
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.carddestination .card-text-overlay:hover h5,
+.carddestination .card-text-overlay:hover p,
+.carddestination .card-text-overlay:hover a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* section card destination end */
+
+/* section for akomodasi star */
+.akomodasi {
+  margin-top: 100px;
+}
+
+.akomodasi .text-center p {
+  color: var(--color-body-primary);
+}
+
+.akomodasi .text-center p:nth-child(1),
+.kulinerL .text-center p:nth-child(1) {
+  font-family: var(--font-title-primary);
+  color: var(--color-body-primary);
+}
+
+.akomodasi .text-center p:nth-child(2) {
+  font-family: var(--font-body-primary);
+}
+
+.akomodasi .card {
+  background: var(--color-tabmenu-primary);
+  border: none;
+  color: var(--color-body-primary);
+  font-family: var(--font-body-primary);
+}
+
+.akomodasi .card-body p:nth-child(2) {
+  font-size: 12px;
+}
+/* section for akomodasi end */
+
+/* section kuliner lezat star */
+
+.kulinerL .text-kulinerL p {
+  font-family: var(--font-body-primary);
+  color: var(--color-body-primary);
+}
+
+.kulinerL .text-paragraf3 p {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 28px;
+}
+
+.kulinerL {
+  background: url(../assets/img_content/background/bg-kulinerL.svg);
+  background-size: cover;
+  /* background-position: 0 -80px; */
+}
+/* section kuliner lezat end */
+
+/* footer section star */
+.footer {
+  background: var(--color-body-primary);
+}
+.footer .creator p:nth-child(1) {
+  font-weight: 700;
+}
+/* footer section end */
+
+/* breakpoint ==========================================*/
+
+/* bS5 mobile extra small < 576px */
+@media (max-width: 576px) {
+  .navbarToba .logo img {
+    display: block;
+  }
+
+  .hero .hero-text .btnvideo a {
+    width: 100%;
+  }
+
+  .hero .hero-text .iconhero {
+    width: 20px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 12px;
+    /* margin: 0 10px; */
+    width: 100%;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 50%;
+    width: 100%;
+  }
+
+  .hero.wrapping .hero-text .btnvideo a {
+    font-size: 10px;
+    /* width: 80px; */
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(100px);
+  }
+
+  .nav-pills button {
+    font-size: 16px;
+  }
+
+  .tabmenu ul {
+    gap: 0;
+  }
+
+  .nav-pills .nav-link.active {
+    width: 250px;
+  }
+
+  /* .etamangan .mie-gomak .text-etamangan p:nth-child(1),
+  .etamangan .manuk-napinadar .text-etamangan p:nth-child(1),
+  .etamangan .sambal-tuk .text-etamangan p:nth-child(1) {
+    font-size: 14px;
+  }
+
+  .etamangan .mie-gomak .text-etamangan p:nth-child(2),
+  .etamangan .mie-gomak .text-etamangan p:nth-child(3),
+  .etamangan .manuk-napinadar .text-etamangan p:nth-child(2),
+  .etamangan .manuk-napinadar .text-etamangan p:nth-child(3),
+  .etamangan .sambal-tuk .text-etamangan p:nth-child(2),
+  .etamangan .sambal-tuk .text-etamangan p:nth-child(3) {
+    font-size: 12px;
+  }
+
+  .etamangan .mie-gomak .text-etamangan,
+  .etamangan .sambal-tuk .text-etamangan {
+    padding: 20px;
+    margin-left: -350px;
+  }
+
+  .etamangan .manuk-napinadar .text-etamangan {
+    margin-right: -350px;
+  } */
+
+  .about_simple .text-white {
+    height: 100%;
+    padding: 28px;
+  }
+
+  .about_simple .text-white p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .howtget .sewamobil .titlesewa,
+  .howtget .sewabus .titlesewa {
+    width: 50%;
+  }
+
+  .howtget .sewamobil iframe,
+  .howtget .sewabus iframe {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .howtget .sewamobil p {
+    word-wrap: break-word;
+  }
+  /* 
+  .hotelpilihan .list_harga :nth-child(1),
+  .hotelpilihan .list_harga p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .hotelpilihan .list_harga .img_pilihan {
+    width: 20px;
+  }
+
+  .hotelpilihan .list_harga .img_iconhotel {
+    width: 30px;
+  }
+
+  .hotelpilihan .list_harga a {
+    width: 100px;
+  }  */
+
+  .kuliner_khas .row {
+    margin: 10px 0;
+  }
+
+  .kuliner_khas .wadahkulinerkiri {
+    height: 150px;
+    margin-left: -20px;
+  }
+
+  .kuliner_khas .wadahkulinerkanan {
+    margin-left: -20px;
+    /* margin: 50px 0; */
+    height: 150px;
+  }
+
+  .kuliner_khas .text-kanan-kuliner {
+    padding: 0;
+  }
+  .kuliner_khas .text-kiri-kuliner {
+    padding: 0;
+  }
+
+  .kuliner_khas .imgkuliner img {
+    width: 290px;
+  }
+
+  .kulinerL div.img_kulinerL img.menu-2 {
+    width: 150px;
+  }
+
+  .kulinerL .img_kulinerL img.menu-1 {
+    width: 120px;
+  }
+
+  .kulinerL .text-paragraf3 p {
+    font-size: 14px;
+  }
+
+  /* .kuliner_khas .wadahkulinerkanan,
+  .kuliner_khas .wadahkulinerkiri {
+    width: 90%;
+  } */
+
+  .akomodasi .card img {
+    width: 30px;
+  }
+
+  .footer p {
+    font-size: 11px;
+  }
+}
+
+/* bS5 tablet small < 576px */
+@media (min-width: 576px) {
+  .navbarToba .logo img {
+    display: block;
+  }
+}
+
+/* bs5 tablet max width < 768px */
+@media (max-width: 768px) {
+  /* .kuliner_khas .text-kiri-kuliner {
+    margin: 50px 0 0;
+  }
+
+  .kuliner_khas .text-kanan-kuliner {
+    margin: 50px 0 50px;
+  } */
+
+  .howtget .sewamobil iframe {
+    width: 280px;
+    height: 280px;
+  }
+
+  .kuliner_khas .wadahkulinerkiri {
+    height: 150px;
+    margin-left: -20px;
+  }
+
+  .kuliner_khas .wadahkulinerkanan {
+    margin-left: -20px;
+    /* margin: 50px 0; */
+    height: 150px;
+  }
+
+  .kuliner_khas img {
+    width: 400px;
+  }
+
+  .akomodasi .card-body .card-text img {
+    width: 16px;
+  }
+
+  .kulinerL .img_kulinerL img.menu-2 {
+    width: 200px;
+  }
+}
+
+/* BS tablet medium min-w 768px */
+@media (min-width: 768px) {
+  .hero .hero-text .iconhero {
+    width: 40px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 43px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+/* BS laptop md lg min-w 768px */
+@media (min-width: 992px) {
+  .navbarToba .logo img {
+    display: none;
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(100%);
+  }
+
+  .hero .hero-text .iconhero {
+    width: 50px;
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 50px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 18px;
+  }
+
+  .akomodasi .card-body p:nth-child(1) {
+    font-size: 11px;
+  }
+
+  .akomodasi .card-body p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .akomodasi .card-body .card-text img {
+    width: 14px;
+  }
+}
+
+/* BS5 Device Extra large min 1200px */
+@media (min-width: 1400px) {
+  .navbarToba ul li {
+    font-size: 18px;
+  }
+
+  .navbarToba .iconnav {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbarToba .btnvisit {
+    font-size: 16px;
+  }
+
+  .hero.wrapping .hero-text {
+    transform: translateY(170%);
+  }
+
+  .hero.wrapping .hero-text .hTittletext {
+    font-size: 60px;
+  }
+
+  .hero.wrapping .hero-text .hMetatext {
+    font-size: 20px;
+  }
+
+  .hero .hero-text .btnvideo a {
+    font-size: 20px;
+    width: 150px;
+  }
+
+  .akomodasi .card-body p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .akomodasi .card-body p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .akomodasi .card-body .card-text img {
+    width: 20px;
+  }
+
+  .kulinerL .img_kulinerL img.menu-2 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .kulinerL .img_kulinerL img.menu-2 {
+    width: 280px;
+  }
+}

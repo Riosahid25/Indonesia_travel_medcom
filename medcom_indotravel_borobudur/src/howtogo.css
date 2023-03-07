@@ -1,0 +1,75 @@
+/* Font import from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* File Root */
+:root {
+  /* root untuk font family */
+  --font-title-primary: "Pacifico", cursive;
+  --font-body-primary: "Poppins", sans-serif;
+
+  /* Color Pallet */
+  --color-branding-primary: #5a7d8b;
+  --color-icon-primary: #5a5a59;
+  --color-icon-secondary: #b6b6b6;
+  --color-bodytext-primary: #3d3d3d;
+  --color-body-primary: #ffffff;
+  --color-button-primary: #0094f3;
+  --color-navbar-primary: #303030;
+  --color-btnmap-primary: #188038;
+}
+
+.howtget .titleHTG {
+  font-family: var(--font-title-primary);
+  font-size: 63px;
+  color: white;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #141010;
+  border-radius: 20px;
+}
+
+.tabmenu {
+  border-radius: 50px;
+  background-color: #252525;
+  font-family: var(--font-body-primary);
+}
+
+.tabmenu ul {
+  padding: 20px;
+}
+
+.howtget .rounded-circle {
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+}
+
+.howtget .sewamobil .line-vertical,
+.howtget .sewabus .line-vertical {
+  width: 2px;
+  height: 158px;
+  background-color: white;
+  margin: 0 9.2px;
+}
+
+.howtget .sewamobil .titlesewa,
+.howtget .sewabus .titlesewa {
+  font-weight: 700;
+  font-family: var(--font-body-primary);
+  color: white;
+  width: 25%;
+}
+
+#adisucipto {
+  line-height: 25px;
+}
+
+footer p {
+  font-size: px;
+}

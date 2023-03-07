@@ -1,0 +1,272 @@
+/* Font import from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* File Root */
+:root {
+  /* root untuk font family */
+  --font-title-primary: "Pacifico", cursive;
+  --font-body-primary: "Poppins", sans-serif;
+
+  /* Color Pallet */
+  --color-branding-primary: #79a0af;
+  --color-icon-primary: #5a5a59;
+  --color-icon-secondary: #b6b6b6;
+  --color-bodytext-primary: #3d3d3d;
+  --color-body-primary: #ffffff;
+  --color-button-primary: #0094f3;
+  --color-navbar-primary: #303030;
+  --color-tooltip-bg: #f7fbfe;
+  --color-tooltip-texttitle: #262626;
+  --color-tooltip-textbody: #595a61;
+}
+
+/* breakpoint ==========================================*/
+
+body {
+  background-color: var(--color-branding-primary);
+}
+
+.intro {
+  position: relative;
+}
+
+.intro .title p {
+  width: 50%;
+  line-height: 30px;
+  font-family: var(--font-body-primary);
+}
+
+.world-map {
+  width: 100%;
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+}
+
+.world-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pin {
+  background: #4362f8;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+.pin::before {
+  content: "";
+  background: #0094f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: pulse 1.3s ease-in-out infinite;
+}
+
+.pin span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  background: #ffffff;
+  border-radius: 3em;
+  padding: 0.3em 0.6em;
+  font-size: 0.9em;
+  transition: 0.6s;
+}
+
+.intro .pin span:hover {
+  cursor: pointer;
+  background-color: #4d4b4b;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.D_toba {
+  top: 40%;
+  left: 21%;
+}
+
+.C_borobudur {
+  top: 66%;
+  left: 35%;
+}
+
+.mandalika {
+  top: 70%;
+  left: 48%;
+}
+
+.l_bajo {
+  top: 68%;
+  left: 60%;
+}
+
+.likupang {
+  top: 38%;
+  left: 62%;
+}
+
+.tooltip_1,
+.tooltip_2,
+.tooltip_3,
+.tooltip_4,
+.tooltip_5 {
+  width: 350px;
+  padding: 15px;
+  background-color: var(--color-tooltip-bg);
+  border-radius: 10px;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  z-index: 4;
+  transform: scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s;
+}
+
+/* .world-map#tooltip.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+} */
+
+/* tambah js */
+#tooltip_1.active,
+#tooltip_2.active,
+#tooltip_3.active,
+#tooltip_4.active,
+#tooltip_5.active {
+  visibility: visible !important;
+  transform: scale(1) !important;
+}
+
+.world-map .tooltip_1 p:nth-child(1),
+.world-map .tooltip_2 p:nth-child(1),
+.world-map .tooltip_3 p:nth-child(1),
+.world-map .tooltip_4 p:nth-child(1),
+.world-map .tooltip_5 p:nth-child(1) {
+  color: var(--color-tooltip-texttitle);
+  font-family: var(--font-body-primary);
+  font-weight: 600;
+}
+
+.world-map .tooltip_1 p:nth-child(2),
+.world-map .tooltip_2 p:nth-child(2),
+.world-map .tooltip_3 p:nth-child(2),
+.world-map .tooltip_4 p:nth-child(2),
+.world-map .tooltip_5 p:nth-child(2) {
+  color: var(--color-tooltip-textbody);
+  font-family: var(--font-body-primary);
+}
+.world-map hr {
+  width: 200px;
+  height: 3px;
+  border-radius: 2px;
+  color: var(--color-tooltip-textbody);
+  margin: 0 0 30px;
+}
+
+.world-map .btn_ {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.world-map .btn_close {
+  width: 40%;
+  /* transition: 0.5s; */
+}
+
+@keyframes pulse {
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+/* bS5 mobile extra small < 576px */
+@media (max-width: 576px) {
+  .world-map {
+    font-size: 13px;
+  }
+
+  .pin {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  .world-map .tooltip_1,
+  .world-map .tooltip_2,
+  .world-map .tooltip_3,
+  .world-map .tooltip_4,
+  .world-map .tooltip_5 {
+    width: 200px;
+    /* left: -60px; */
+  }
+
+  .world-map .tooltip_3 {
+    left: -80px;
+  }
+  .world-map .tooltip_4 {
+    left: -80px;
+  }
+  .world-map .tooltip_5 {
+    left: -80px;
+  }
+
+  .world-map .tooltip_1 p:nth-child(1),
+  .world-map .tooltip_2 p:nth-child(1),
+  .world-map .tooltip_3 p:nth-child(1),
+  .world-map .tooltip_4 p:nth-child(1),
+  .world-map .tooltip_5 p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .world-map .tooltip_1 p:nth-child(2),
+  .world-map .tooltip_2 p:nth-child(2),
+  .world-map .tooltip_3 p:nth-child(2),
+  .world-map .tooltip_4 p:nth-child(2),
+  .world-map .tooltip_5 p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .world-map hr {
+    width: 100px;
+  }
+
+  .tooltip_1 .btn_ a,
+  .tooltip_2 .btn_ a,
+  .tooltip_3 .btn_ a,
+  .tooltip_4 .btn_ a,
+  .tooltip_5 .btn_ a {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/* bS5 tablet small < 576px */
+@media (min-width: 576px) {
+}
+
+/* BS tablet medium min-w 768px */
+@media (min-width: 768px) {
+}
+/* BS laptop md lg min-w 768px */
+@media (min-width: 992px) {
+}
+
+/* BS5 Device Extra large min 1200px */
+@media (min-width: 1400px) {
+}
